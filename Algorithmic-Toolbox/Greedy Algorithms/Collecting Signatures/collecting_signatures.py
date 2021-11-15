@@ -7,7 +7,17 @@ Segment = namedtuple('Segment', 'start end')
 
 
 def compute_optimal_points(segments):
-    type here
+    points = []
+    my_position = -1
+    segments = sorted(segments, key=lambda x: x.end)
+
+    for seg in segments:
+        if my_position < seg.start:
+            # append set of points
+            points.append(seg.end)
+            my_position = seg.end
+
+    return points
 
 
 if __name__ == '__main__':
