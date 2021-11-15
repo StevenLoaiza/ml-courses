@@ -1,9 +1,14 @@
 # python3
 
-
 def money_change(money):
+    """
+
+    :param money: in cents
+    :return:
+    """
     assert 0 <= money <= 10 ** 3
-    type here
+
+    return (money // 10) + ((money % 10) // 5) + (money % 5)
 
 
 if __name__ == '__main__':
