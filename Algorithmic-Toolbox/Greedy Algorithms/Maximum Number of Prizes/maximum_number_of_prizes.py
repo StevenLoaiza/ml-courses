@@ -5,7 +5,13 @@ def compute_optimal_summands(n):
     assert 1 <= n <= 10 ** 9
     summands = []
 
-    type here
+    i = 1
+    # Check if the next two sequence satisfy condition, else return [n]
+    while i + i + 1 <= n:
+        summands.append(i)
+        n -= i
+        i += 1
+    summands.append(n)
 
     return summands
 
