@@ -15,7 +15,19 @@ def largest_number_naive(numbers):
 
 
 def largest_number(numbers):
-    type here
+    numbers = list(map(str, numbers))
+    # naive sort
+    numbers.sort(reverse=True)
+
+    # else check element wise moving largest number to the front.
+    for _ in numbers:
+        for i in range(len(numbers) - 1):
+            if numbers[i] + numbers[i + 1] < numbers[i + 1] + numbers[i]:
+                curr_ = numbers[i]
+                numbers[i] = numbers[i + 1]
+                numbers[i + 1] = curr_
+
+    return int("".join(numbers))
 
 
 if __name__ == '__main__':
