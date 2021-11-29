@@ -33,13 +33,16 @@ def check_repeat(n):
 def last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n):
     assert 0 <= n <= 10 ** 18
 
+    if n <= 1:
+        return n
+
     n = n % 60
     prev, curr = 0, 1
 
-    for i in range(2, n+1):
+    for i in range(2, n+2):
         prev, curr = curr, prev + curr
 
-    return (curr * (prev + curr)) % 10
+    return (prev * curr) % 10
 
 
 if __name__ == '__main__':

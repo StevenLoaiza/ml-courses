@@ -1,41 +1,5 @@
 type: edu
 files:
-- name: lcm.py
-  visible: true
-  placeholders:
-  - offset: 297
-    length: 34
-    placeholder_text: type here
-    initial_state:
-      length: 9
-      offset: 292
-    initialized_from_dependency: false
-    selected: true
-    status: Unchecked
-  text: |
-    # python3
-
-
-    def lcm_naive(a, b):
-        assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
-
-        multiple = max(a, b)
-        while multiple % a != 0 or multiple % b != 0:
-            multiple += 1
-
-        return multiple
-
-
-    def lcm(a, b):
-        assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
-
-        type here
-
-
-    if __name__ == '__main__':
-        input_a, input_b = map(int, input().split())
-        print(lcm(input_a, input_b))
-  learner_created: false
 - name: lcm_unit_tests.py
   visible: true
   placeholders:
@@ -100,10 +64,13 @@ files:
         if all_tests_passed:
             passed()
   learner_created: false
+- name: lcm.py
+  visible: true
+  learner_created: true
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-2-algorithmic-warm-up/discussions
 status: Unchecked
 feedback:
   message: Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-2-algorithmic-warm-up/submission">submit
     to Coursera</a>
-  time: Sun, 10 Oct 2021 00:32:56 UTC
+  time: Mon, 29 Nov 2021 02:58:46 UTC
 record: -1

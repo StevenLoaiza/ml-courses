@@ -3,15 +3,15 @@ files:
 - name: last_digit_of_the_sum_of_squares_of_fibonacci_numbers.py
   visible: true
   placeholders:
-  - offset: 510
-    length: 9
+  - offset: 1095
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 510
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     # python3
 
@@ -45,14 +45,14 @@ files:
   visible: true
   placeholders:
   - offset: 593
-    length: 9
+    length: 15
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 593
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     import unittest
     from last_digit_of_the_sum_of_squares_of_fibonacci_numbers import last_digit_of_the_sum_of_squares_of_fibonacci_numbers, last_digit_of_the_sum_of_squares_of_fibonacci_numbers_naive
@@ -97,5 +97,8 @@ files:
             passed()
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-2-algorithmic-warm-up/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Don't just delete task text
+  time: Sun, 10 Oct 2021 18:56:18 UTC
 record: -1

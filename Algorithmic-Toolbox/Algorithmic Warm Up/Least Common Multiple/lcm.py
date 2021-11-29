@@ -13,7 +13,7 @@ def lcm_naive(a, b):
 
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
-    return (a*b) / math.gcd(a, b)
+    return int((a*b) / math.gcd(a, b))
 
 
 if __name__ == '__main__':
