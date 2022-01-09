@@ -12,7 +12,20 @@ def majority_element_naive(elements):
 
 def majority_element(elements):
     assert len(elements) <= 10 ** 5
-    type here
+    mid = len(elements)//2
+    L = elements[:mid]
+    H = elements[mid:]
+
+    majority = 0
+    for half in [L, H]:
+        for e in half:
+            if half.count(e) > len(half) / 2:
+                candidate = e
+                if elements.count(candidate) > len(elements) / 2:
+                    majority = 1
+                    break
+
+    return majority
 
 
 if __name__ == '__main__':
